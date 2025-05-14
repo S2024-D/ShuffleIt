@@ -36,22 +36,22 @@ let package = Package(
     targets: [
         .target(
             name: "ShuffleIt",
-            dependencies: ["Utils"]
+            dependencies: ["ShuffleItUtils"]
         ),
         .target(
             name: "ShuffleStack",
-            dependencies: ["Utils"]
+            dependencies: ["ShuffleItUtils"]
         ),
         .target(
             name: "CarouselStack",
-            dependencies: ["Utils"]
+            dependencies: ["ShuffleItUtils"]
         ),
         .target(
             name: "ShuffleDeck",
-            dependencies: ["Utils"]
+            dependencies: ["ShuffleItUtils"]
         ),
         .target(
-            name: "Utils",
+            name: "ShuffleItUtils",
             dependencies: []
         ),
         .target(
@@ -64,7 +64,7 @@ let package = Package(
         ),
         .testTarget(
             name: "ShuffleItTests",
-            dependencies: ["ShuffleItForTest", "Utils", "ViewInspector"]
+            dependencies: ["ShuffleItForTest", "ShuffleItUtils", "ViewInspector"]
         ),
     ],
     swiftLanguageVersions: [.v5]

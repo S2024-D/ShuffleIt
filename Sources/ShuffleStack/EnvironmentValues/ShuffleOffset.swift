@@ -1,4 +1,4 @@
-import Utils
+import ShuffleItUtils
 import SwiftUI
 
 /// An environment key for shuffle stack offset.

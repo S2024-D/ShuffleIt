@@ -1,4 +1,4 @@
-import Utils
+import ShuffleItUtils
 import SwiftUI
 #if canImport(UtilsForTest)
 import UtilsForTest
